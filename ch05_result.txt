@@ -1,0 +1,31 @@
+>>> 
+============================== RESTART: C:\Users\yokan\Desktop\ch05.py =============================
+HELLO
+Hell@
+[]
+['Apple', 'Orange', 'Pear']
+['Apple', 'Orange', 'Pear', 'Banana', 'Peach']
+Apple
+Pear
+Peach
+['Apple', 'Orange', 'Strawberry', 'Banana', 'Peach']
+Peach
+['Apple', 'Orange', 'Strawberry', 'Banana']
+['Apple', 'Orange', 'Strawberry', 'Banana', 'Peach']
+False
+True
+4
+Which fruit do yo eat? :Banana
+OK!
+[['Apple', 'Orange', 'Strawberry', 'Banana'], ['red', 'yellow', 'white'], [0, 1, 2, 3, 4]]
+[0, 1, 2, 3, 4]
+[0, 1, 2, 3, 4, 5]
+[['Apple', 'Orange', 'Strawberry', 'Banana'], ['red', 'yellow', 'white'], [0, 1, 2, 3, 4, 5]]
+('only_one',)
+('Jackson', 1958, True)
+1958
+True
+False
+{'Dracula': 'Stoker', '1984': 'Orwel'}
+{'Dracula': 'Stoker', '1984': 'Orwel', 'The Trial': 'Kafka'}
+>>> 

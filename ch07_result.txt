@@ -1,0 +1,27 @@
+>>> 
+==================== RESTART: C:/Users/yokan/Desktop/ch7.py ====================
+T
+e
+d
+GOT
+Narcos
+Vice
+['GOT', 'NARCOS', 'VICE']
+['got', 'narcos', 'vice']
+
+1
+2
+3
+4
+
+3
+2
+1
+Happy New Year!
+
+1
+
+1
+2
+4
+>>> 

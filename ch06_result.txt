@@ -1,0 +1,25 @@
+>>> 
+==================== RESTART: C:/Users/yokan/Desktop/ch6.py ====================
+K a f k a
+catinhat
+sawyersawyer
+HELLO
+hello
+Hello
+Hello William Faulkner!
+['Hello', 'William', 'Faulkner!']
+Hello William Faulkner !
+hello
+HeLLo
+4
+True
+False
+True
+Cat "in the" hat.
+Cat 'in the' hat.
+Cat
+in the
+hat.
+['トルストイ', 'カミユ', 'オーウェル']
+ひとつの光があった。
+>>> 

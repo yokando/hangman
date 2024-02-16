@@ -1,0 +1,17 @@
+>>> 
+==================== RESTART: C:/Users/yokan/Desktop/ch08.py ===================
+
+乗数： 3 2 9.0
+
+randum: 22
+
+mean: 18.857142857142858
+median: 12
+mode: 33
+
+Hello
+None
+
+Hello
+
+>>> 
