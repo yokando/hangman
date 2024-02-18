@@ -1,0 +1,53 @@
+import random
+
+print('計算ドリルＳＴＡＲＴ！')
+score = 0
+
+for i in range(5):
+  print(f'第{i + 1}問')
+  num1 = random.randrange(100) + 1
+  num2 = random.randrange(100) + 1
+  print(f'{num1}+{num2}')
+  answer = int(input('答えは？'))
+
+  if num1 + num2 == answer:
+    print('お見事！正解\n')
+    score +=1
+  else:
+    print('残念！不正解\n')
+
+print(f'終了。正解は{score}問です。')
+
+
+import matplotlib.pyplot as plt
+
+x = [1,2,3,4,5,6,7]
+y = [36.5,36.7,36.4,36.5,36.4,36.6,36.3]
+plt.plot(x,y)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+
+rcParams['font.family'] = 'sans-serif'
+rcParams['font.sans-serif'] = ['Yu Gothic', 'Meiryo']
+
+x = ['国語', '数学', '英語', '化学', '日本史']
+y = [78, 65, 82, 73, 90]
+plt.pie(y, labels=x)
+plt.show()
+
+
+
+
+import requests
+import json
+
+url = 'https://zipcloud.ibsnet.co.jp/api/search'
+param = {'zipcode': '860-0044'}
+res = requests.get(url, params=param)
+
+res_dict = json.loads(res.text)
+addrdata = res_dict['results'][0]
+print(addrdata['address1'] + addrdata['address2'] + addrdata['address3'])

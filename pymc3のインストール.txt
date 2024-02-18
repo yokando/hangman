@@ -1,0 +1,4 @@
+# starting out with a fresh environment
+conda create -c msys2 -c conda-forge -n mypm3env python=3.8 mkl-service libpython m2w64-toolchain scipy matplotlib pandas
+conda activate mypm3env
+pip install pymc3
