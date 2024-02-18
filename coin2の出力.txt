@@ -1,0 +1,76 @@
+
+(mypm3env) PS C:\Users\yokan\desktop> python coin2.py
+WARN: Could not locate executable g77
+WARN: Could not locate executable f77
+WARN: Could not locate executable ifort
+WARN: Could not locate executable ifl
+WARN: Could not locate executable f90
+WARN: Could not locate executable DF
+WARN: Could not locate executable efl
+Using built-in specs.
+COLLECT_GCC=C:\Users\yokan\anaconda3\envs\mypm3env\Library\mingw-w64\bin\gfortran.exe
+COLLECT_LTO_WRAPPER=C:/Users/yokan/anaconda3/envs/mypm3env/Library/mingw-w64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-5.3.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/x86_64-w64-mingw32/include --libexecdir=/mingw64/lib --with-gxx-include-dir=/mingw64/include/c++/5.3.0 --enable-bootstrap --with-arch=x86-64 --with-tune=generic --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-time=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-version-specific-runtime-libs --disable-isl-version-check --enable-lto --enable-libgomp --disable-multilib --enable-checking=release --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://sourceforge.net/projects/msys2 --with-gnu-as --with-gnu-ld
+Thread model: posix
+gcc version 5.3.0 (Rev5, Built by MSYS2 project)
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+data=  [1 0 0 0]
+C:\Users\yokan\anaconda3\envs\mypm3env\lib\site-packages\deprecat\classic.py:215: FutureWarning: In v4.0, pm.sample will return an `arviz.InferenceData` object instead of a `MultiTrace` by default. You can pass return_inferencedata=True or return_inferencedata=False to be safe and silence this warning.
+  return wrapped_(*args_, **kwargs_)
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (2 chains in 2 jobs)
+NUTS: [theta]
+WARN: Could not locate executable g77
+WARN: Could not locate executable f77
+WARN: Could not locate executable ifort
+WARN: Could not locate executable ifl
+WARN: Could not locate executable f90
+WARN: Could not locate executable DF
+WARN: Could not locate executable efl
+Using built-in specs.
+COLLECT_GCC=C:\Users\yokan\anaconda3\envs\mypm3env\Library\mingw-w64\bin\gfortran.exe
+COLLECT_LTO_WRAPPER=C:/Users/yokan/anaconda3/envs/mypm3env/Library/mingw-w64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-5.3.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/x86_64-w64-mingw32/include --libexecdir=/mingw64/lib --with-gxx-include-dir=/mingw64/include/c++/5.3.0 --enable-bootstrap --with-arch=x86-64 --with-tune=generic --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-time=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-version-specific-runtime-libs --disable-isl-version-check --enable-lto --enable-libgomp --disable-multilib --enable-checking=release --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://sourceforge.net/projects/msys2 --with-gnu-as --with-gnu-ld
+Thread model: posix
+gcc version 5.3.0 (Rev5, Built by MSYS2 project)
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+data=  [1 0 0 0]
+WARN: Could not locate executable g77
+WARN: Could not locate executable f77
+WARN: Could not locate executable ifort
+WARN: Could not locate executable ifl
+WARN: Could not locate executable f90
+WARN: Could not locate executable DF
+WARN: Could not locate executable efl
+Using built-in specs.
+COLLECT_GCC=C:\Users\yokan\anaconda3\envs\mypm3env\Library\mingw-w64\bin\gfortran.exe
+COLLECT_LTO_WRAPPER=C:/Users/yokan/anaconda3/envs/mypm3env/Library/mingw-w64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-5.3.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/x86_64-w64-mingw32/include --libexecdir=/mingw64/lib --with-gxx-include-dir=/mingw64/include/c++/5.3.0 --enable-bootstrap --with-arch=x86-64 --with-tune=generic --enable-languages=c,lto,c++,objc,obj-c++,fortran,ada --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-time=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-version-specific-runtime-libs --disable-isl-version-check --enable-lto --enable-libgomp --disable-multilib --enable-checking=release --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://sourceforge.net/projects/msys2 --with-gnu-as --with-gnu-ld
+Thread model: posix
+gcc version 5.3.0 (Rev5, Built by MSYS2 project)
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+data=  [1 0 0 0]
+ |---------------------------------------------------------| 0.03% [1/4000 00:00<00:08 Sampling 2 chains, 0 divergences] |---------------------------------------------------------| 0.05% [2/4000 00:00<00:14 Sampling 2 chains, 0 divergences] |---------------------------------------------------------| 0.07% [3/4000 00:00<00:11 Sampling 2 chains, 0 divergences] |---------------------------------------------------------| 0.10% [4/4000 00:00<00:11 Sampling 2 chains, 0 divergences] |---------------------------------------------------------| 0.12% [5/4000 00:00<00:11 Sampling 2 chains, 0 divergences] |█-------------------------------------------------------| 1.90% [76/4000 00:00<00:05 Sampling 2 chains, 0 divergences] |██-----------------------------------------------------| 5.35% [214/4000 00:00<00:05 Sampling 2 chains, 0 divergences] |████---------------------------------------------------| 8.95% [358/4000 00:00<00:04 Sampling 2 chains, 0 divergences] |██████------------------------------------------------| 12.93% [517/4000 00:00<00:04 Sampling 2 chains, 0 divergences] |█████████---------------------------------------------| 17.07% [683/4000 00:00<00:04 Sampling 2 chains, 0 divergences] |███████████-------------------------------------------| 21.18% [847/4000 00:01<00:03 Sampling 2 chains, 0 divergences] |█████████████----------------------------------------| 25.27% [1011/4000 00:01<00:03 Sampling 2 chains, 0 divergences] |███████████████--------------------------------------| 29.32% [1173/4000 00:01<00:03 Sampling 2 chains, 0 divergences] |█████████████████------------------------------------| 33.45% [1338/4000 00:01<00:03 Sampling 2 chains, 0 divergences] |███████████████████----------------------------------| 37.60% [1504/4000 00:01<00:02 Sampling 2 chains, 0 divergences] |██████████████████████-------------------------------| 41.80% [1672/4000 00:02<00:02 Sampling 2 chains, 0 divergences] |████████████████████████-----------------------------| 45.95% [1838/4000 00:02<00:02 Sampling 2 chains, 0 divergences] |██████████████████████████---------------------------| 50.00% [2000/4000 00:02<00:02 Sampling 2 chains, 0 divergences] |████████████████████████████-------------------------| 54.00% [2160/4000 00:03<00:02 Sampling 2 chains, 0 divergences] |██████████████████████████████-----------------------| 57.12% [2285/4000 00:03<00:02 Sampling 2 chains, 0 divergences] |███████████████████████████████----------------------| 60.35% [2414/4000 00:03<00:02 Sampling 2 chains, 0 divergences] |█████████████████████████████████--------------------| 63.65% [2546/4000 00:03<00:02 Sampling 2 chains, 0 divergences] |███████████████████████████████████------------------| 67.03% [2681/4000 00:03<00:01 Sampling 2 chains, 0 divergences] |█████████████████████████████████████----------------| 70.47% [2819/4000 00:03<00:01 Sampling 2 chains, 0 divergences] |███████████████████████████████████████--------------| 74.00% [2960/4000 00:04<00:01 Sampling 2 chains, 0 divergences] |█████████████████████████████████████████------------| 77.60% [3104/4000 00:04<00:01 Sampling 2 chains, 0 divergences] |███████████████████████████████████████████----------| 81.28% [3251/4000 00:04<00:00 Sampling 2 chains, 0 divergences] |█████████████████████████████████████████████--------| 85.03% [3401/4000 00:04<00:00 Sampling 2 chains, 0 divergences] |███████████████████████████████████████████████------| 88.85% [3554/4000 00:04<00:00 Sampling 2 chains, 0 divergences] |█████████████████████████████████████████████████----| 92.75% [3710/4000 00:04<00:00 Sampling 2 chains, 0 divergences] |███████████████████████████████████████████████████--| 96.72% [3869/4000 00:04<00:00 Sampling 2 chains, 0 divergences] |████████████████████████████████████████████████████| 100.00% [4000/4000 00:04<00:00 Sampling 2 chains, 0 divergences]Sampling 2 chains for 1_000 tune and 1_000 draw iterations (2_000 + 2_000 draws total) took 20 seconds.
+coin2.py:23: DeprecationWarning: The function `traceplot` from PyMC3 is just an alias for `plot_trace` from ArviZ. Please switch to `pymc3.plot_trace` or `arviz.plot_trace`.
+  pm.traceplot(trace, lines={'theta':theta_real});
+C:\Users\yokan\anaconda3\envs\mypm3env\lib\site-packages\arviz\plots\backends\matplotlib\traceplot.py:214: UserWarning: A valid var_name should be provided, found {'t'} expected from {'theta'}
+  warnings.warn(
+coin2.py:24: MatplotlibDeprecationWarning: savefig() got unexpected keyword argument "figsize" which is no longer supported as of 3.3 and will become an error in 3.6
+  plt.savefig('coin4.png', dpi=300, figsize=(5.5, 5.5))
+        mean     sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+theta  0.335  0.179   0.044    0.661      0.006    0.004    1065.0    1268.0    1.0
+coin2.py:28: DeprecationWarning: The function `autocorrplot` from PyMC3 is just an alias for `plot_autocorr` from ArviZ. Please switch to `pymc3.plot_autocorr` or `arviz.plot_autocorr`.
+  pm.autocorrplot(trace)
+coin2.py:29: MatplotlibDeprecationWarning: savefig() got unexpected keyword argument "figsize" which is no longer supported as of 3.3 and will become an error in 3.6
+  plt.savefig('coin8.png', dpi=300, figsize=(5.5, 5.5))
+coin2.py:33: MatplotlibDeprecationWarning: savefig() got unexpected keyword argument "figsize" which is no longer supported as of 3.3 and will become an error in 3.6
+  plt.savefig('coin9.png', dpi=300, figsize=(5.5, 5.5))
+coin2.py:37: MatplotlibDeprecationWarning: savefig() got unexpected keyword argument "figsize" which is no longer supported as of 3.3 and will become an error in 3.6
+  plt.savefig('coin10.png', dpi=300, figsize=(5.5, 5.5))
+coin2.py:41: MatplotlibDeprecationWarning: savefig() got unexpected keyword argument "figsize" which is no longer supported as of 3.3 and will become an error in 3.6
+  plt.savefig('coin11.png', dpi=300, figsize=(5.5, 5.5))
+(mypm3env) PS C:\Users\yokan\desktop>

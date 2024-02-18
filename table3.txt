@@ -1,0 +1,44 @@
+table3-1
+        mean    sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail  r_hat
+mu     53.48  0.53   52.41    54.42       0.02     0.01     885.0     745.0    NaN
+sigma   3.54  0.39    2.89     4.27       0.01     0.01     665.0     548.0    NaN
+
+table3-2
+        mean    sd  hdi_3%  hdi_97%  mcse_mean   mcse_sd  ess_bulk  ess_tail  r_hat
+mu     53.01  0.41   52.22    53.79       0.01  9.00e-03    1086.0     897.0    1.0
+sigma   2.19  0.42    1.43     2.97       0.01  1.00e-02     880.0     754.0    1.0
+nu      4.71  3.97    1.02    10.16       0.15  1.04e-01     893.0     856.0    1.0
+
+tips data - head
+   total_bill   tip     sex smoker  day    time  size
+0       16.99  1.01  Female     No  Sun  Dinner     2
+1       10.34  1.66    Male     No  Sun  Dinner     3
+2       21.01  3.50    Male     No  Sun  Dinner     3
+3       23.68  3.31    Male     No  Sun  Dinner     2
+4       24.59  3.61  Female     No  Sun  Dinner     4
+tips data - tail
+     total_bill   tip     sex smoker   day    time  size
+239       29.03  5.92    Male     No   Sat  Dinner     3
+240       27.18  2.00  Female    Yes   Sat  Dinner     2
+241       22.67  2.00    Male    Yes   Sat  Dinner     2
+242       17.82  1.75    Male     No   Sat  Dinner     2
+243       18.78  3.00  Female     No  Thur  Dinner     2
+
+table_tips
+          mean    sd  hdi_3%  hdi_97%  mcse_mean   mcse_sd  ess_bulk  ess_tail  r_hat
+means[0]  2.77  0.16    2.47     3.07   2.00e-03  1.00e-03   10043.0    7684.0    1.0
+means[1]  2.74  0.26    2.27     3.22   3.00e-03  2.00e-03    8579.0    7012.0    1.0
+means[2]  2.99  0.18    2.66     3.33   2.00e-03  1.00e-03   11290.0    8102.0    1.0
+means[3]  3.25  0.14    2.98     3.52   1.00e-03  1.00e-03   12510.0    8022.0    1.0
+sds[0]    1.26  0.12    1.05     1.47   1.00e-03  1.00e-03    9550.0    7273.0    1.0
+sds[1]    1.10  0.20    0.76     1.49   2.00e-03  2.00e-03   11655.0    6911.0    1.0
+sds[2]    1.66  0.13    1.42     1.89   1.00e-03  1.00e-03   12009.0    7818.0    1.0
+sds[3]    1.26  0.10    1.07     1.46   1.00e-03  1.00e-03   15244.0    8578.0    1.0
+
+table_suishitu
+           mean     sd  hdi_3%  hdi_97%  mcse_mean   mcse_sd  ess_bulk  ess_tail  r_hat
+alpha     31.26  30.88    1.68    99.01   5.67e+00  4.14e+00      52.0      56.0   1.01
+beta      19.16  16.42    1.96    52.88   2.81e+00  2.07e+00      56.0     141.0   1.01
+theta[0]   0.60   0.07    0.47     0.74   3.00e-03  2.00e-03     473.0     898.0   1.00
+theta[1]   0.60   0.07    0.45     0.72   4.00e-03  3.00e-03     431.0    1310.0   1.00
+theta[2]   0.60   0.07    0.47     0.72   4.00e-03  3.00e-03     308.0    1775.0   1.00
