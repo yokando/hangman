@@ -1,0 +1,161 @@
+【table_MM_SimpleExamples】
+month: 1   RisokuBun: 2500  GankinBun: 2500  Zandaka: 197500
+month: 2   RisokuBun: 2468  GankinBun: 2532  Zandaka: 194968
+month: 3   RisokuBun: 2437  GankinBun: 2563  Zandaka: 192405
+month: 4   RisokuBun: 2405  GankinBun: 2595  Zandaka: 189810
+month: 5   RisokuBun: 2372  GankinBun: 2628  Zandaka: 187182
+month: 6   RisokuBun: 2339  GankinBun: 2661  Zandaka: 184521
+month: 7   RisokuBun: 2306  GankinBun: 2694  Zandaka: 181827
+month: 8   RisokuBun: 2272  GankinBun: 2728  Zandaka: 179099
+month: 9   RisokuBun: 2238  GankinBun: 2762  Zandaka: 176337
+month: 10   RisokuBun: 2204  GankinBun: 2796  Zandaka: 173541
+month: 11   RisokuBun: 2169  GankinBun: 2831  Zandaka: 170710
+month: 12   RisokuBun: 2133  GankinBun: 2867  Zandaka: 167843
+month: 13   RisokuBun: 2098  GankinBun: 2902  Zandaka: 164941
+month: 14   RisokuBun: 2061  GankinBun: 2939  Zandaka: 162002
+month: 15   RisokuBun: 2025  GankinBun: 2975  Zandaka: 159027
+month: 16   RisokuBun: 1987  GankinBun: 3013  Zandaka: 156014
+month: 17   RisokuBun: 1950  GankinBun: 3050  Zandaka: 152964
+month: 18   RisokuBun: 1912  GankinBun: 3088  Zandaka: 149876
+month: 19   RisokuBun: 1873  GankinBun: 3127  Zandaka: 146749
+month: 20   RisokuBun: 1834  GankinBun: 3166  Zandaka: 143583
+month: 21   RisokuBun: 1794  GankinBun: 3206  Zandaka: 140377
+month: 22   RisokuBun: 1754  GankinBun: 3246  Zandaka: 137131
+month: 23   RisokuBun: 1714  GankinBun: 3286  Zandaka: 133845
+month: 24   RisokuBun: 1673  GankinBun: 3327  Zandaka: 130518
+month: 25   RisokuBun: 1631  GankinBun: 3369  Zandaka: 127149
+month: 26   RisokuBun: 1589  GankinBun: 3411  Zandaka: 123738
+month: 27   RisokuBun: 1546  GankinBun: 3454  Zandaka: 120284
+month: 28   RisokuBun: 1503  GankinBun: 3497  Zandaka: 116787
+month: 29   RisokuBun: 1459  GankinBun: 3541  Zandaka: 113246
+month: 30   RisokuBun: 1415  GankinBun: 3585  Zandaka: 109661
+month: 31   RisokuBun: 1370  GankinBun: 3630  Zandaka: 106031
+month: 32   RisokuBun: 1325  GankinBun: 3675  Zandaka: 102356
+month: 33   RisokuBun: 1279  GankinBun: 3721  Zandaka: 98635
+month: 34   RisokuBun: 1232  GankinBun: 3768  Zandaka: 94867
+month: 35   RisokuBun: 1185  GankinBun: 3815  Zandaka: 91052
+month: 36   RisokuBun: 1138  GankinBun: 3862  Zandaka: 87190
+month: 37   RisokuBun: 1089  GankinBun: 3911  Zandaka: 83279
+month: 38   RisokuBun: 1040  GankinBun: 3960  Zandaka: 79319
+month: 39   RisokuBun: 991  GankinBun: 4009  Zandaka: 75310
+month: 40   RisokuBun: 941  GankinBun: 4059  Zandaka: 71251
+month: 41   RisokuBun: 890  GankinBun: 4110  Zandaka: 67141
+month: 42   RisokuBun: 839  GankinBun: 4161  Zandaka: 62980
+month: 43   RisokuBun: 787  GankinBun: 4213  Zandaka: 58767
+month: 44   RisokuBun: 734  GankinBun: 4266  Zandaka: 54501
+month: 45   RisokuBun: 681  GankinBun: 4319  Zandaka: 50182
+month: 46   RisokuBun: 627  GankinBun: 4373  Zandaka: 45809
+month: 47   RisokuBun: 572  GankinBun: 4428  Zandaka: 41381
+month: 48   RisokuBun: 517  GankinBun: 4483  Zandaka: 36898
+month: 49   RisokuBun: 461  GankinBun: 4539  Zandaka: 32359
+month: 50   RisokuBun: 404  GankinBun: 4596  Zandaka: 27763
+month: 51   RisokuBun: 347  GankinBun: 4653  Zandaka: 23110
+month: 52   RisokuBun: 288  GankinBun: 4712  Zandaka: 18398
+month: 53   RisokuBun: 229  GankinBun: 4771  Zandaka: 13627
+month: 54   RisokuBun: 170  GankinBun: 4830  Zandaka: 8797
+month: 55   RisokuBun: 109  GankinBun: 4891  Zandaka: 3906
+Total month : 56  Amount paid: 278954
+[10.  19.5 28.  30.5 26.  24.  29.  37.  42.  45. ]
+[6.0766947  8.44678956]
+ message: The solution converged.
+ success: True
+  status: 1
+     fun: [ 2.871e-12  7.709e-13]
+       x: [ 7.248e+00  4.710e+00]
+    nfev: 9
+    fjac: [[-2.919e-01  9.564e-01]
+           [-9.564e-01 -2.919e-01]]
+       r: [ 2.887e+00  1.169e+00  7.500e+00]
+     qtf: [ 2.857e-10  8.705e-09]
+[7.24771781 4.70961569]
+
+
+
+【table_MM_LP】
+Optimal
+myProblem:
+MINIMIZE
+-4*x + 1*y + 0
+SUBJECT TO
+_C1: x + y <= 2
+VARIABLES
+x <= 3 Continuous
+y <= 1 Continuous
+x= 2.0
+y= 0.0
+f(x,y)= -8.000000
+Welcome to the CBC MILP Solver
+Version: 2.10.3
+Build Date: Dec 15 2019
+Result - Optimal solution found
+Objective value:                25320.00000000
+Enumerated nodes:               2
+Total iterations:               210
+Time (CPU seconds):             0.07
+Time (Wallclock seconds):       0.08
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.11   (Wallclock seconds):       0.11
+Optimal
+x1= 41.0
+x2= 33.0
+x3= 9.0
+f(x)= 25320.000000
+Welcome to the CBC MILP Solver
+Version: 2.10.3
+Build Date: Dec 15 2019
+Result - Optimal solution found
+Objective value:                25320.00000000
+Enumerated nodes:               2
+Total iterations:               210
+Time (CPU seconds):             0.07
+Time (Wallclock seconds):       0.08
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.11   (Wallclock seconds):       0.11
+Optimal
+x1= 41.0
+x2= 33.0
+x3= 9.0
+f(x)= 25320.000000
+Welcome to the CBC MILP Solver
+Version: 2.10.3
+Build Date: Dec 15 2019
+
+
+
+【table_MM_Inventory】
+5.6 2.84855853271189
+1.6448536269514722 45 2044 181
+Total amount dsum = 773
+Mean of inventory x = 103.683333
+32 242
+Total amount dsum = 777
+Mean of inventory ypo = 140.258333
+
+
+
+【table_MM_Poisson】
+6.829319374877928 8.189096664135696e-05 0.9983059764137331
+3.9706423010830947 6.0054350868120695e-05 0.5132127690434065
+1.839525226749452 1.696015334936442e-05 0.23867701090304239
+
+
+
+【table_MM_SimPy】
+fast 0
+slow 0
+fast 0.5
+slow 1
+fast 1.0
+fast 1.5
+
+
+
+【table_MM_MM1.py】
+rho = 0.5  L =  1.0  W =  8.0
+calculated L = 1.0061723933796194  W = 8.05627531870977
+Clients: 124893
+Min queueing: 0 , Max queueing: 16 , No queuing: 62056
+[0.43027514712234205, 1.1600662300343143, 2.0716913770056262, 20.588861917234247, 23.8189667580493]
+[0, 1, 2, 0, 1]
+[999961.4089475805, 999974.3044957977, 999977.326331879, 999979.9151551797, 999999.0865410857]
+[0, 0, 0, 1, 0]
