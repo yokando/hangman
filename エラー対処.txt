@@ -1,0 +1,343 @@
+ipynbファイルをpyファイルに変換：
+jupyter nbconvert --to python NS_Population.ipynb
+
+以下のモジュールを”pip install xxx”または”conda install xxx”でインストールしておく
+
+cartopy
+vpython
+pyaudio
+pulp
+simpy
+
+文章を扱う場合、以下のモジュールや辞書をインストールする：
+pip install mecab-python3
+pip install unidic-lite
+pip install japanize_matplotlib
+
+遺伝的アルゴリズムを扱う場合、以下のモジュールをインストールする：
+pip install deap
+
+囚人のジレンマを扱う場合、以下のモジュールをインストールする：
+pip install axelrod
+
+
+アニメーションのための設定
+《animation.FuncAnimationで作成した画像をmp4にする方法》
+まず、animation.FuncAnimationでアニメーションを作成するには、次のようなコードを書きます。
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+fig = plt.figure()
+def update(frame):
+```
+# アニメーションを作成する
+ani = FuncAnimation(fig, update, frames=range(100), interval=100)
+```
+# アニメーションをmp4に保存する
+ani.save('anim.mp4', writer='ffmpeg')
+```
+
+このとき、writerとして'ffmpeg'を指定すると、ffmpegという動画変換ツールを使ってmp4に変換します。
+ffmpegは別途インストールする必要があります。
+
+《WindowsでFFmpegのインストールする手順》
+↓❶ FFmpegの公式ページを開き、「Download」ボタンをクリックします。
+
+↓❷ Windowsマークをクリックすると、「Windows builds from gyan.dev」と「Windows builds by BtbN」、二つのダウンロード先が表示されます。「Windows builds by BtbN」の方がわかりやすいのでそちらをクリックします。
+
+↓❸ インストールしたいFFmpegバージョンのzipをクリックしてダウンロードします。ここでは、「ffmpeg-N-99880-g8fbcc546b8-win64-gpl-shared.zip」をダウンロードします。
+
+「Windows」FFmpegのダウンロードとインストール
+↓❹ ダウンロードしたzipファイルを解凍してください。解凍したフォルダ「ffmpeg-N-99880-g8fbcc546b8-win64-gpl-shared」→「bin」の順に開きます。クスプローラーのアドレスバーをクリックして「bin」のパスをコピーします。
+
+「Windows」FFmpegのダウンロードとインストール
+↓❺ 「設定」「アカウント」で、検索画面で「環境変数」と入力して「環境変数の編集」をクリック「Path」を選択し、「編集」をクリックし、「新規」をクリックし、先コピーした「bin」のパスを貼り付けます。追加されたら、「OK」をクリックします。
+
+「Windows」FFmpegのダウンロードとインストール
+↓❻ 「Windows」キー+「R」キーを押し、「cmd」を入力して「Enter」キーを押し、「ffmpeg -version」をコピーしてコマンドプロンプトに貼り付け、「Enter」キーを押します。FFmpeg情報が表示されば、WindowsでFFmpegが正常にインストールされていることが確認できます。
+
+
+
+ベイズ統計での対応：
+【エラー】numpyにモジュール”bool"がいない
+【対処】conda activate mypm3env
+
+【エラー】graphvizがない
+【対処】conda install -c conda-forge python-graphviz
+
+【エラー】 RuntimeError:
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+【対処】if __name__ == '__main__':を加える
+
+
+
+【問い】
+TypeError: FigureBase.gca() got an unexpected keyword argument 'projection'
+このエラーは、**Matplotlib**のアップデートによるものです。解決策として、次のいずれかの方法を試してみてください:
+
+1. `axes1 = fig.add_subplot(projection='3d')` を使用する。これは、`fig.gca(projection='3d')` の代替方法です¹²³。
+2. 他の関数を使用する際に、'projection' パラメータを避ける。または、関数呼び出し時にこのパラメータを削除する。
+
+
+
+【問い】
+【答え：BingAI】
+pyaudioで発生させた音をファイルに保存させる方法もちろんです！**Pyaudio**を使って音を録音し、ファイルに保存する方法をご紹介します。以下の手順に従って進めてみてください。
+
+1. **Pyaudioのインストール**:
+    - 最初に、Pyaudioをインストールします。以下のコマンドをプロンプトで実行してください。
+
+    ```bash
+    pip install pyaudio
+    ```
+
+    インストールが完了したら、Pythonスクリプトでエラーが出なければ成功です。
+
+2. **録音に必要な機材の確認**:
+    - 録音には実際の**マイク**と**スピーカ**が必要です。ノートPCには内臓マイクとスピーカが搭載されていることが多いですが、もしそれがない場合は以下の安価な機材を購入して使用できます。
+
+    - **マイク**:
+        - ソニー コンデンサーマイク モノラル/PC通話用
+        - [Amazonで見る](https://www.amazon.co.jp/dp/B00FJH5W7Y)
+
+    - **スピーカ**:
+        - Creative Pebble ブラック USB電源採用アクティブ スピーカー
+        - [Amazonで見る](https://www.amazon.co.jp/dp/B07G5JZD3B)
+
+    - 端子と電源供給に注意して選んでください。
+
+3. **録音のサンプルプログラム**:
+    - 以下のプログラムは、Pyaudioを使って録音し、wavファイルに保存するものです。
+
+    ```python
+    import pyaudio
+    import wave
+
+    CHUNK = 1024
+    FORMAT = pyaudio.paInt16
+    CHANNELS = 1
+    RATE = 44100
+    RECORD_SECONDS = 5
+    WAVE_OUTPUT_FILENAME = "output.wav"
+
+    p = pyaudio.PyAudio()
+
+    stream = p.open(format=FORMAT,
+                    channels=CHANNELS,
+                    rate=RATE,
+                    input=True,
+                    frames_per_buffer=CHUNK)
+
+    print("Recording...")
+
+    frames = []
+
+    for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+        data = stream.read(CHUNK)
+        frames.append(data)
+
+    print("Recording finished.")
+
+    stream.stop_stream()
+    stream.close()
+    p.terminate()
+
+    wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+    wf.setnchannels(CHANNELS)
+    wf.setsampwidth(p.get_sample_size(FORMAT))
+    wf.setframerate(RATE)
+    wf.writeframes(b''.join(frames))
+    wf.close()
+    ```
+
+このプログラムを実行すると、5秒間の録音が行われ、`output.wav`というファイルに保存されます。録音時間やファイル名を変更したい場合は、適宜修正してください。
+
+以上の手順で、Pyaudioを使って音を録音し、ファイルに保存できます。お試しください！🎤🎶
+
+
+【答え：ChatGPT】
+Pyaudioを使用して生成した音をファイルに保存するには、`wave`モジュールを使用すると便利です。以下は、Pyaudioを使って音を生成し、それをwaveファイルとして保存する簡単な例です。
+
+まず、`pyaudio`および`wave`モジュールをインストールします（以下のコマンドを使用してインストールできます）：
+
+```bash
+pip install pyaudio
+```
+
+そして、以下は音を生成して保存するサンプルコードです：
+
+```python
+import pyaudio
+import wave
+
+# Pyaudioの初期化
+p = pyaudio.PyAudio()
+
+# パラメータの設定
+format = pyaudio.paInt16  # 16ビットのサンプルフォーマットを使用
+channels = 1               # モノラル
+rate = 44100               # サンプリングレート（Hz）
+duration = 5               # 音の長さ（秒）
+
+# 音の生成
+stream = p.open(format=format,
+                channels=channels,
+                rate=rate,
+                input=False,
+                output=True)
+
+frames = []
+for i in range(int(rate / 1024 * duration)):
+    data = stream.read(1024)
+    frames.append(data)
+
+# ストリームを閉じる
+stream.stop_stream()
+stream.close()
+
+# Pyaudioを終了
+p.terminate()
+
+# 音をファイルに保存
+output_filename = 'output.wav'
+with wave.open(output_filename, 'wb') as wf:
+    wf.setnchannels(channels)
+    wf.setsampwidth(pyaudio.PyAudio().get_sample_size(format))
+    wf.setframerate(rate)
+    wf.writeframes(b''.join(frames))
+
+print(f'音が {output_filename} に保存されました。')
+```
+
+この例では、PyAudioを使用して音を生成し、その後`wave`モジュールを使用して`output.wav`というファイルに保存しています。適切なパラメータを設定して、必要に応じてカスタマイズしてください。
+
+
+【問い】
+AttributeError: module 'numpy' has no attribute 'int'.エラーの解決法？
+
+【答え】
+このエラーは、**TensorFlow**を使用していて、以下のエラーが発生した際の解決法をまとめてみました。このエラーはTensorFlowに限らず、他のライブラリでも同様の問題が発生する可能性があるため、記事にまとめました。
+
+エラーメッセージ:
+```
+AttributeError: module 'numpy' has no attribute 'XXX'
+```
+
+このエラーは、**numpy**のバージョン1.20で廃止が開始されたため、それ以前のバージョンを利用すれば問題ありません。具体的な解決策として、以下の方法が考えられます。
+
+1. **numpyをダウングレード**:
+    - numpyのバージョン1.24以前を利用することで、問題を回避できます。例えば、numpyの1.24.0以下で最新のバージョンが1.23.5なので、このバージョンを指定してインストールし直すと良いと思います。
+
+2. **numpyの依存関係のあるライブラリをアップグレード**:
+    - numpyの変更を受け、numpyと依存関係にあるライブラリも np.int などを使わずに開発されている場合があります。最新のものにアップグレードすることで解決する可能性があります。
+
+3. **組込み型の int を np.int にエイリアスを貼る（非推奨）**:
+    - この手法は、廃止となったnp.intをエイリアスで復活させる方法ですが、非推奨です。numpy以外のライブラリでエラーが出ている場合は、先にnumpyをインポートしてエイリアスを貼ることで、エラーを回避することはできると思います。ただし、この手法は互換性の問題を引き起こす可能性があるため、慎重に検討すると良いでしょう。
+
+以上の方法を試してみてください。お役に立てれば幸いです。¹².
+
+ソース: Bing との会話 2024/2/11
+(1) AttributeError: module 'numpy' has no attribute 'XXX' エラーの .... https://qiita.com/yusuke_s_yusuke/items/bf7ce2deb6153ab0123b.
+(2) AttributeError: module 'numpy' has no attribute 'XXX' エラーの .... https://bing.com/search?q=AttributeError%3a+module+%27numpy%27+has+no+attribute+%27int%27%e3%81%ae%e3%82%a8%e3%83%a9%e3%83%bc%e3%81%ae%e8%a7%a3%e6%b1%ba%e6%b3%95.
+(3) Pythonで module '***' has no attribute '***' のエラーがとれない！. https://qiita.com/567000/items/88788c8e877b9c7e0ad1.
+(4) AttributeError: module 'numpy' has no attribute 'int'. https://stackoverflow.com/questions/74946845/attributeerror-module-numpy-has-no-attribute-int.
+(5) undefined. https://numpy.org/devdocs/release/1.20.0-notes.html.
+(6) undefined. https://bing.com/search?q=.
+(7) ja.wikipedia.org. https://ja.wikipedia.org/wiki/NumPy.
+
+
+【問い】
+TypeError: object of type 'gaussian_kde' has no len()のエラーの解消法
+
+【答え】（これでもうまく行かない）
+このエラーは、`gaussian_kde`というオブジェクトに対して`len()`という関数を使おうとしたときに発生します。`len()`という関数は、リストや文字列などの長さを返す関数ですが、`gaussian_kde`というオブジェクトは長さという概念を持っていません。そのため、`TypeError: object of type 'gaussian_kde' has no len()`というエラーが出ます。
+
+このエラーを解消するには、`len()`という関数を使わないようにコードを修正する必要があります。`gaussian_kde`というオブジェクトは、確率密度関数を推定するためのオブジェクトで、`scipy.stats`というモジュールに属しています¹。このオブジェクトには、以下のようなメソッドや属性があります¹。
+
+- `evaluate(points)`：指定した点での確率密度関数の値を返すメソッド
+- `integrate_box(low, high)`：指定した区間での確率密度関数の積分値を返すメソッド
+- `integrate_kde(other)`：別の`gaussian_kde`オブジェクトとの積分値を返すメソッド
+- `resample(size=None)`：確率密度関数に従って新たなサンプルを生成するメソッド
+- `dataset`：元のデータセットを格納した属性
+- `d`：データの次元数を格納した属性
+- `n`：データの個数を格納した属性
+- `factor`：バンド幅の係数を格納した属性
+
+もし、`gaussian_kde`オブジェクトの長さというのが、元のデータセットの個数を意味しているのであれば、`len()`の代わりに`n`という属性を使うことができます。例えば、以下のようなコードであれば、エラーが出なくなるはずです。
+
+```python
+import numpy as np
+from scipy.stats import gaussian_kde
+
+# データセットを生成
+data = np.random.randn(100)
+
+# gaussian_kdeオブジェクトを作成
+kde = gaussian_kde(data)
+
+# データセットの個数を表示
+print(kde.n)
+```
+
+このように、`gaussian_kde`オブジェクトに対して`len()`という関数を使わないようにコードを修正することで、エラーを解消することができます。もし、他の目的で`len()`という関数を使っていたのであれば、その目的に合ったメソッドや属性を探してみてください。
+
+
+【問い】
+UnicodeDecodeError: 'cp932' codec can't decode byte 0x84 in position 131: illegal multibyte sequenceのエラー対処法
+
+【答え】
+現在使用しているPythonのデフォルトエンコーディングを確認
+>>> import sys
+>>> sys.getdefaultencoding()
+'utf-8'
+
+単純にencoding方式を「utf-8」に指定することでこのエラーを回避することができます。
+f = open(CSV_FILE, encoding="utf-8")
+
+【問い】
+animation.FuncAnimationで作成した画像をmp4にする方法
+
+【答え】
+まず、animation.FuncAnimationでアニメーションを作成するには、次のようなコードを書きます。
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+fig = plt.figure()
+# グラフの初期設定を行う
+# ...
+
+# アニメーションを更新する関数を定義する
+def update(frame):
+    # グラフの内容を変更する
+    # ...
+
+# アニメーションを作成する
+ani = FuncAnimation(fig, update, frames=range(100), interval=100)
+```
+
+次に、アニメーションをmp4に保存するには、次のようなコードを追加します。
+
+```python
+# アニメーションをmp4に保存する
+ani.save('anim.mp4', writer='ffmpeg')
+```
+
+このとき、writerとして'ffmpeg'を指定すると、ffmpegという動画変換ツールを使ってmp4に変換します。¹
+ffmpegは別途インストールする必要があります。²
+
+もし、ffmpegを使えない場合は、writerとして'imagemagick'を指定すると、imagemagickという画像変換ツールを使ってgifに変換します。³
+imagemagickも別途インストールする必要があります。⁴
+
+```python
+# アニメーションをgifに保存する
+ani.save('anim.gif', writer='imagemagick')
+
+
+【問い】
+TypeError: `data2` has been removed (replaced by `y`); please update your code.　このエラーの解消法
+
+【答え】
+dataをx、data2をyに書き換えたらうまくいった。
